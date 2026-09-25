@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+                <label for="nickname">Nick:</label>
+                <input type="text" id="nickname" name="nickname" required>
+                <label for="user-email">E-mail:</label>
+                <input type="email" id="user-email" name="user-email" required>
+            <fieldset>
+                <legend>Wybierz Dodatki do pizzy</legend>
+                <label>
+                    <input type="checkbox" id="dodatki1" value="Pepperoni"> Pepperoni</label><br>
+                <label>
+                    <input type="checkbox" id="dodatki2" value="Mushrooms"> Mushrooms</label><br>
+                <label>
+                    <input type="checkbox" id="dodatki3" value="Onions"> Onions</label><br>
+                <label>
+                    <input type="checkbox" id="dodatki4" value="Sausage"> Sausage</label><br>
+                <label>
+                    <input type="checkbox" id="dodatki5" value="Shrimp"> Shrimp</label><br>
+                <label>
+                    <input type="checkbox" id="dodatki6" value="Jalapeno"> Jalapeno</label>
+            </fieldset>
+                <br>
+            <fieldset>
+                <legend>Wybierz rozmiar pizzy:</legend>
+                <input type="radio" id="rozmiar1" name="rozmiar" value="Mała">
+                <label for="rozmiar1">Mała</label><br>
+                <legend>Wybierz rozmiar pizzy:</legend>
+                <input type="radio" id="rozmiar2" name="rozmiar" value="Średni">
+                <label for="rozmiar2">Średni</label><br>
+                <legend>Wybierz rozmiar pizzy:</legend>
+                <input type="radio" id="rozmiar3" name="rozmiar" value="Duży">
+                <label for="rozmiar3">Duży</label><br>
+            
+            </fieldset>
+
+            <fieldset>
+                <legend>Wybierz sos do pizzy:</legend>
+                <select id="sos" name="sos" multiple size="1">
+                    <option value="">-- wybierz sos --</option>
+                    <option value="Czosnkowy">Czosnkowy</option>
+                    <option value="Pomidorowy">Pomidorowy</option>
+                    <option value="BBQ">BBQ</option>
+                </select>
+            </fieldset>
+            <br>
+<label for="content">Informacja:</label>
+<textarea id="content" name="content" rows="5" cols="40" required></textarea>
+<br>
+<input type="button" value="Wyślij" onclick="sendForm()">
+<input type="color" id="kolor" value="#000000" onchange="changeBackground()"><br><br>
+<input type="button" value="Zmień Tło" onclick="changeBackgroundRandom()">
+<input type="button" value="Zmień kolor ćionki" onclick="changecolor()">
+<div id="dane"></div>
+<div id="matma"></div>
+</body>
+</html>
